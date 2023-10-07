@@ -1,0 +1,197 @@
+---
+---
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a, h1 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, h1 a:hover {
+    color: #555;  /* Darkens the color slightly on hover */
+}
+
+h1 a {
+    border: none;
+    outline: none;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+body.dark-mode {
+    background-color: #121212; /* Almost black, but not quite */
+    color: #ddd;               /* Light gray for general text */
+}
+
+body.dark-mode header, 
+body.dark-mode nav a, 
+body.dark-mode h1 a {
+    color: #ddd;               /* Light gray for header text and navigation links */
+}
+
+body.dark-mode nav a:hover, 
+body.dark-mode h1 a:hover {
+    color: #bbb;               /* Slightly darker gray on hover */
+}
+
+body.dark-mode h2 {
+    color: #aaa;               /* Slightly darker gray for subheadings */
+}
+
+body.dark-mode a {
+    color: #4CAF50;            /* Bright color for general links in content for contrast and emphasis */
+}
+
+body.dark-mode a:hover {
+    color: #45a045;            /* Slightly darker shade for hovered links */
+}
+
+body.dark-mode li::before {
+    color: #ddd;               /* Light gray for bullet points */
+}
+
+/* Apple-Style Toggle Switch */
+.toggle-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.toggle-label {
+    cursor: pointer;
+    position: relative;
+    width: 42px; /* Reduced size */
+    height: 20px; /* Reduced size */
+    background-color: transparent; /* Transparent background */
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s;
+    margin-left: 10px;
+    border: 1px solid #BDBDBD; /* Subtle gray border */
+    vertical-align: middle;
+    margin-top: -2px; /* This nudges the toggle upwards slightly for a better alignment with the text. You can adjust this value if needed. */
+}
+
+.toggle-label::after {
+    content: "";
+    position: absolute;
+    width: 18px; /* Reduced size */
+    height: 18px; /* Reduced size */
+    border-radius: 45px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+    transition: all 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+    left: 23px; /* Adjusted for reduced size */
+}
+
+/* Post Listing */
+ul.posts-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.posts-list li {
+    margin-bottom: 10px;
+}
+
+ul.posts-list a {
+    text-decoration: none;  /* Removes the underline */
+    color: #333;  /* Default color */
+    transition: color 0.3s ease;  /* Smooth transition for hover */
+}
+
+ul.posts-list a:hover {
+    color: #555;  /* Slightly darker color on hover */
+}
+
+body.dark-mode ul.posts-list a {
+    color: #ddd;  /* Light color for dark mode */
+}
+
+body.dark-mode ul.posts-list a:hover {
+    color: #bbb;  /* Slightly darker on hover for dark mode */
+}
+
+.footer-email-form {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-email-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.footer-email-form input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-email-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
