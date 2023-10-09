@@ -171,27 +171,4 @@ body.dark-mode ul.posts-list a:hover {
     color: #bbb;  /* Slightly darker on hover for dark mode */
 }
 
-.footer-email-form {
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #e0e0e0;
-}
-
-.footer-email-form input[type="email"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-}
-
-.footer-email-form input[type="submit"] {
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.footer-email-form input[type="submit"]:hover {
-    background-color: #555;
-}
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Writing
+title: Writing 
 ---
 
 <h2>Writing</h2>
@@ -8,7 +8,7 @@ title: Writing
 <ul class="posts-list">
     {% for post in site.posts %}
         <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </li>
     {% endfor %}
 </ul>

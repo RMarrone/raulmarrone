@@ -18,6 +18,13 @@ I’m Raúl. I have 8 years of experience as an Product, Pricing and Comercial A
 
 In the wilderness of my mind.
 
+### Contact
+
+- Twitter 
+- LinkedIn
+- email
+
+
 ### Yes
 
 

@@ -8,3 +8,5 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 
+# Adding webrick for compatibility with Ruby 3.0+
+gem 'webrick'
